@@ -7,8 +7,9 @@ import './App.css';
 function App() {
     let [counter , setcounter] = useState(15)
     const addValue = () => {
+      console.log('clicked' , counter);  
+
         setcounter (counter + 1);
-        console.log('clicked' , counter);  
         if (counter === 20 ){
           setcounter (counter = 1 );
         }
